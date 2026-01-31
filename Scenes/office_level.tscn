@@ -24,4 +24,4 @@ texture = ExtResource("3_66m76")
 
 [node name="NPCManager" type="Node2D" parent="." unique_id=2068257419]
 script = ExtResource("4_66m76")
-convesations = Array[ExtResource("5_885cm")]([ExtResource("6_v8ayu")])
+conversations = Array[ExtResource("5_885cm")]([ExtResource("6_v8ayu")])
