@@ -18,7 +18,7 @@ metadata/_edit_lock_ = true
 position = Vector2(264, 268)
 texture = ExtResource("2_hqd0j")
 
-[node name="Sprite2D" type="Sprite2D" parent="SPR_Alien" unique_id=1267411476]
+[node name="SPR_Mask" type="Sprite2D" parent="SPR_Alien" unique_id=1267411476]
 position = Vector2(-7, -119)
 texture = ExtResource("3_66m76")
 
