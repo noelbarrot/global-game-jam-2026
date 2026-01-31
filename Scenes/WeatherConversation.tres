@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Conversation" format=3 uid="uid://dm8xacai0jasx"]
+
+[ext_resource type="Resource" uid="uid://bubi7hdi4iwo1" path="res://Scenes/WeatherOpener.tres" id="1_06gu4"]
+[ext_resource type="Script" uid="uid://clrxahvbdhld5" path="res://conversation.gd" id="1_kks2i"]
+[ext_resource type="Resource" uid="uid://j7udxt45n1eh" path="res://Scenes/WeatherReply.tres" id="2_huqx4"]
+
+[resource]
+script = ExtResource("1_kks2i")
+opener = ExtResource("1_06gu4")
+reply = ExtResource("2_huqx4")
+metadata/_custom_type_script = "uid://clrxahvbdhld5"

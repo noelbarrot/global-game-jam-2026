@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://bubi7hdi4iwo1"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_wsw5q"]
+
+[resource]
+script = ExtResource("1_wsw5q")
+name = "weatherOpener"
+line = "Can you believe this weather"
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

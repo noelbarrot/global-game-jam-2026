@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dxjnlkjucc6uw"]
+
+[ext_resource type="Texture2D" uid="uid://cvk8mmjs0eigv" path="res://Art/PlaceHolder_Background.png" id="1_y2son"]
+[ext_resource type="Texture2D" uid="uid://bs4c3mcypgaqb" path="res://Art/alien.png" id="2_hqd0j"]
+[ext_resource type="Texture2D" uid="uid://dubfwk1se233b" path="res://Art/HumanMask.png" id="3_66m76"]
+[ext_resource type="Script" uid="uid://bh5wbb702ue07" path="res://Scripts/npc_manager.gd" id="4_66m76"]
+[ext_resource type="Script" uid="uid://clrxahvbdhld5" path="res://conversation.gd" id="5_885cm"]
+[ext_resource type="Resource" uid="uid://dm8xacai0jasx" path="res://Scenes/WeatherConversation.tres" id="6_v8ayu"]
+
+[node name="OfficeLevel" type="Node2D" unique_id=1520300912]
+
+[node name="SPR_Background" type="Sprite2D" parent="." unique_id=785809394]
+texture = ExtResource("1_y2son")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="SPR_Alien" type="Sprite2D" parent="." unique_id=1454755298]
+position = Vector2(264, 268)
+texture = ExtResource("2_hqd0j")
+
+[node name="Sprite2D" type="Sprite2D" parent="SPR_Alien" unique_id=1267411476]
+position = Vector2(-7, -119)
+texture = ExtResource("3_66m76")
+
+[node name="NPCManager" type="Node2D" parent="." unique_id=2068257419]
+script = ExtResource("4_66m76")
+convesations = Array[ExtResource("5_885cm")]([ExtResource("6_v8ayu")])
