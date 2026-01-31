@@ -6,4 +6,5 @@
 script = ExtResource("1_wsw5q")
 name = "weatherOpener"
 line = "Can you believe this weather"
+Category = null
 metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

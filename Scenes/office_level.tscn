@@ -3,9 +3,11 @@
 [ext_resource type="Texture2D" uid="uid://cvk8mmjs0eigv" path="res://Art/PlaceHolder_Background.png" id="1_y2son"]
 [ext_resource type="Texture2D" uid="uid://bs4c3mcypgaqb" path="res://Art/alien.png" id="2_hqd0j"]
 [ext_resource type="Texture2D" uid="uid://dubfwk1se233b" path="res://Art/HumanMask.png" id="3_66m76"]
+[ext_resource type="Script" uid="uid://bnl61ftfr370a" path="res://Scripts/alien.gd" id="3_v8ayu"]
 [ext_resource type="Script" uid="uid://bh5wbb702ue07" path="res://Scripts/npc_manager.gd" id="4_66m76"]
-[ext_resource type="Script" uid="uid://clrxahvbdhld5" path="res://conversation.gd" id="5_885cm"]
+[ext_resource type="Script" uid="uid://clrxahvbdhld5" path="res://Scripts/conversation.gd" id="5_885cm"]
 [ext_resource type="Resource" uid="uid://dm8xacai0jasx" path="res://Scenes/WeatherConversation.tres" id="6_v8ayu"]
+[ext_resource type="Script" uid="uid://dihclyptq2qx" path="res://Scripts/conversation_manager.gd" id="8_mdadf"]
 
 [node name="OfficeLevel" type="Node2D" unique_id=1520300912]
 
@@ -17,6 +19,7 @@ metadata/_edit_lock_ = true
 [node name="SPR_Alien" type="Sprite2D" parent="." unique_id=1454755298]
 position = Vector2(264, 268)
 texture = ExtResource("2_hqd0j")
+script = ExtResource("3_v8ayu")
 
 [node name="SPR_Mask" type="Sprite2D" parent="SPR_Alien" unique_id=1267411476]
 position = Vector2(-7, -119)
@@ -25,3 +28,66 @@ texture = ExtResource("3_66m76")
 [node name="NPCManager" type="Node2D" parent="." unique_id=2068257419]
 script = ExtResource("4_66m76")
 conversations = Array[ExtResource("5_885cm")]([ExtResource("6_v8ayu")])
+
+[node name="ConversationManager" type="Node2D" parent="." unique_id=1883166592]
+script = ExtResource("8_mdadf")
+
+[node name="ConversationTimer" type="Timer" parent="ConversationManager" unique_id=438348817]
+one_shot = true
+autostart = true
+
+[node name="OptionSelection" type="Control" parent="." unique_id=320641979]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 246.0
+offset_top = 563.0
+offset_right = 288.0
+offset_bottom = 620.0
+
+[node name="GridContainer" type="GridContainer" parent="OptionSelection" unique_id=572775147]
+layout_mode = 0
+offset_right = 652.0
+offset_bottom = 450.0
+
+[node name="Option1" type="Button" parent="OptionSelection/GridContainer" unique_id=1615901543]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Option2" type="Button" parent="OptionSelection/GridContainer" unique_id=1955447481]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Option3" type="Button" parent="OptionSelection/GridContainer" unique_id=220116462]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Option4" type="Button" parent="OptionSelection/GridContainer" unique_id=1413851462]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Option5" type="Button" parent="OptionSelection/GridContainer" unique_id=972422943]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NPCDiaglogue" type="Control" parent="." unique_id=856074759]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1159.0
+offset_top = 569.0
+offset_right = 1714.0
+offset_bottom = 908.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="NPCDiaglogue" unique_id=781134707]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="timeout" from="ConversationManager/ConversationTimer" to="ConversationManager" method="_on_conversation_timer_timeout"]

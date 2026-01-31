@@ -8,19 +8,20 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("select"):
 		_get_conversation()
 
-func _get_conversation() -> void:
+func _get_conversation() -> Conversation:
 	var arrayLength : int = conversations.size()
 	var conversationIndex : int = randi_range(0,arrayLength-1)
 	var loadedConversation : Conversation = conversations[conversationIndex]
-	if npcOpening == true:
-		_send_opener(loadedConversation)
-	else: _send_reply(loadedConversation)
+	return loadedConversation
+	#if npcOpening == true:
+		#_send_opener(loadedConversation)
+	##else: _send_reply(loadedConversation)
 	
-func _send_opener(chosenConversation) -> Opener:
+func _send_opener(chosenConversation) -> void:
 	var conversationOpener : Opener = chosenConversation.opener
-	return conversationOpener.Opener
+	print(conversationOpener.line)
 
-func _send_reply(chosenConversation) -> Reply:
-	var conversationReply : Reply = chosenConversation.reply
-	return conversationReply
+#func _match_reply(chosenConversation) -> Reply:
+	#var conversationReply : Reply = chosenConversation.reply
+	#return conversationReply
 	

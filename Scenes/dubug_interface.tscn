@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://bjwpunlwa4qfk"]
+
+[node name="Dubug_Interface" type="Control" unique_id=541355575]
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=45326740]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -56.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Option1" type="Button" parent="GridContainer" unique_id=1832127757]
+layout_mode = 2
+
+[node name="Option2" type="Button" parent="GridContainer" unique_id=13133692]
+layout_mode = 2
+
+[node name="Option3" type="Button" parent="GridContainer" unique_id=1492282920]
+layout_mode = 2
+
+[node name="Option4" type="Button" parent="GridContainer" unique_id=1829998324]
+layout_mode = 2
+
+[node name="Option5" type="Button" parent="GridContainer" unique_id=133189197]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
