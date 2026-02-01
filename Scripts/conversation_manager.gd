@@ -38,7 +38,8 @@ func _get_alien_answer(chosenAnswer:String) -> void:
 	
 
 func _update_alien_replies() -> void:
-	Alien.humanReplies.append(currentConversation.reply)
+	if Alien.humanReplies.find(currentConversation.reply) == -1:
+		Alien.humanReplies.append(currentConversation.reply)
 	convoTimer.start()
 
 func _match_lines(correctReply:String, givenAnswer:String) -> void:
