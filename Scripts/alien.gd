@@ -21,20 +21,25 @@ func _populate_options() -> void:
 	#Check if correct reply is in alien vocabulary and if so add it do answer options.
 	var correctReply : int = humanReplies.find(conversationManager.currentConversation.reply)
 	var humanReplySize: int = humanReplies.size()
+	var correctLine : String
 	if correctReply != -1:
-		var correctLine : String = humanReplies[correctReply].line
+		correctLine = humanReplies[correctReply].line
 		dialogueOptions.append(correctLine)
 	
 	#Check if there are any human replies available and add up to two to answer options randomly
 	if humanReplySize > 0:
 		if humanReplySize == 1:
-			dialogueOptions.append(humanReplies[0].line)
+			if dialogueOptions.find(humanReplies[0].line) == -1:
+				dialogueOptions.append(humanReplies[0].line)
 		elif humanReplySize > 1:
 			var randHumanReplies : int = 2
 			while randHumanReplies > 0:
 				var randomIndex : int = randi_range(0,humanReplySize-1)
-				dialogueOptions.append(humanReplies[randomIndex].line)
-				randHumanReplies -= 1
+				var lineOption = humanReplies[randomIndex].line
+				if dialogueOptions.find(lineOption) == -1:
+					dialogueOptions.append(humanReplies[randomIndex].line)
+					randHumanReplies -1
+				else: randHumanReplies -= 1
 			
 	#Fill rest of answer options with alien phrases
 	var dialogueOptionSize : int = dialogueOptions.size()
@@ -42,8 +47,11 @@ func _populate_options() -> void:
 	var arraySize : int = alienPhrases.size()
 	while optionTotal > 0:
 		var randomIndex : int = randi_range(0,arraySize-1)
-		dialogueOptions.append(alienPhrases[randomIndex])
-		optionTotal -=1
+		if dialogueOptions.find(alienPhrases[randomIndex]) == -1:
+			dialogueOptions.append(alienPhrases[randomIndex])
+			optionTotal -=1
+		else: continue
+	
 	dialogueOptions.shuffle()
 	option1.text = dialogueOptions[0]
 	option2.text = dialogueOptions[1]
