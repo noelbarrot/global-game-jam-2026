@@ -1,0 +1,183 @@
+[gd_scene format=3 uid="uid://d4gwdjpafj51o"]
+
+[ext_resource type="Texture2D" uid="uid://cvk8mmjs0eigv" path="res://Art/PlaceHolder_Background.png" id="1_y2son"]
+[ext_resource type="Texture2D" uid="uid://bs4c3mcypgaqb" path="res://Art/alien.png" id="2_hqd0j"]
+[ext_resource type="Texture2D" uid="uid://dubfwk1se233b" path="res://Art/HumanMask.png" id="3_66m76"]
+[ext_resource type="Script" uid="uid://bnl61ftfr370a" path="res://Scripts/alien.gd" id="3_v8ayu"]
+[ext_resource type="Script" uid="uid://bh5wbb702ue07" path="res://Scripts/npc_manager.gd" id="4_66m76"]
+[ext_resource type="Script" uid="uid://clrxahvbdhld5" path="res://Scripts/conversation.gd" id="5_885cm"]
+[ext_resource type="Resource" path="res://Conversations/aircon.tres" id="7_f430w"]
+[ext_resource type="Resource" path="res://Conversations/aitalk.tres" id="8_hgna3"]
+[ext_resource type="Script" uid="uid://dihclyptq2qx" path="res://Scripts/conversation_manager.gd" id="8_mdadf"]
+[ext_resource type="Resource" path="res://Conversations/alone.tres" id="9_3asbo"]
+[ext_resource type="Resource" path="res://Conversations/area51.tres" id="10_b4kox"]
+[ext_resource type="Resource" path="res://Conversations/baby.tres" id="11_3vl52"]
+[ext_resource type="Resource" path="res://Conversations/boss.tres" id="12_25r8u"]
+[ext_resource type="Resource" path="res://Conversations/brella.tres" id="13_5kkk4"]
+[ext_resource type="Resource" path="res://Conversations/bro.tres" id="14_3r62y"]
+[ext_resource type="Resource" path="res://Conversations/cafe.tres" id="15_d75wr"]
+[ext_resource type="Resource" path="res://Conversations/catdog.tres" id="16_te46k"]
+[ext_resource type="Resource" path="res://Conversations/cheat.tres" id="17_sdfsv"]
+[ext_resource type="Resource" path="res://Conversations/christ.tres" id="18_10wd8"]
+[ext_resource type="Resource" path="res://Conversations/comp.tres" id="19_6tob8"]
+[ext_resource type="Resource" path="res://Conversations/compile.tres" id="20_obdwf"]
+[ext_resource type="Resource" path="res://Conversations/cooler.tres" id="21_vwl57"]
+[ext_resource type="Resource" path="res://Conversations/corn.tres" id="22_m5elx"]
+[ext_resource type="Resource" path="res://Conversations/damon.tres" id="23_qn3qq"]
+[ext_resource type="Resource" path="res://Conversations/danger.tres" id="24_cj4bu"]
+[ext_resource type="Resource" path="res://Conversations/dark.tres" id="25_ist1t"]
+[ext_resource type="Resource" path="res://Conversations/defend.tres" id="26_k007g"]
+[ext_resource type="Resource" path="res://Conversations/drinks.tres" id="27_5t173"]
+[ext_resource type="Resource" path="res://Conversations/fair.tres" id="28_h4i5e"]
+[ext_resource type="Resource" path="res://Conversations/family.tres" id="29_yd1kq"]
+[ext_resource type="Resource" path="res://Conversations/game.tres" id="30_ou55e"]
+[ext_resource type="Resource" path="res://Conversations/grandma.tres" id="31_c0f0k"]
+[ext_resource type="Resource" path="res://Conversations/gym.tres" id="32_8l1j2"]
+[ext_resource type="Resource" path="res://Conversations/hall.tres" id="33_k2h3g"]
+[ext_resource type="Resource" path="res://Conversations/ice.tres" id="34_4iy4q"]
+[ext_resource type="Resource" uid="uid://b1x1drf37qoei" path="res://Conversations/insidedog.tres" id="35_1p32d"]
+[ext_resource type="Resource" path="res://Conversations/ken.tres" id="36_53ans"]
+[ext_resource type="Resource" path="res://Conversations/lotto.tres" id="37_8ruhq"]
+[ext_resource type="Resource" path="res://Conversations/mail.tres" id="38_af81k"]
+[ext_resource type="Resource" path="res://Conversations/moon.tres" id="39_v6yba"]
+[ext_resource type="Resource" path="res://Conversations/mum.tres" id="40_wilyw"]
+[ext_resource type="Resource" path="res://Conversations/nottom.tres" id="41_1ij2i"]
+[ext_resource type="Resource" path="res://Conversations/peace.tres" id="42_cayi6"]
+[ext_resource type="Resource" path="res://Conversations/phone.tres" id="43_j6jmw"]
+[ext_resource type="Resource" path="res://Conversations/pluto.tres" id="44_vjqjy"]
+[ext_resource type="Resource" uid="uid://chwa0ow2nld0e" path="res://Conversations/pool.tres" id="45_rvq36"]
+[ext_resource type="Resource" path="res://Conversations/prose.tres" id="46_qhtsg"]
+[ext_resource type="Resource" path="res://Conversations/psychic.tres" id="47_k0380"]
+[ext_resource type="Resource" path="res://Conversations/pyramids.tres" id="48_vcmgb"]
+[ext_resource type="Resource" path="res://Conversations/rap.tres" id="49_1is43"]
+[ext_resource type="Resource" path="res://Conversations/scape.tres" id="50_guvri"]
+[ext_resource type="Resource" path="res://Conversations/sleep.tres" id="51_7iax6"]
+[ext_resource type="Resource" path="res://Conversations/space.tres" id="52_mc8xr"]
+[ext_resource type="Resource" path="res://Conversations/toast.tres" id="53_dnnb4"]
+[ext_resource type="Resource" path="res://Conversations/tom.tres" id="54_t8x47"]
+[ext_resource type="Resource" path="res://Conversations/wifi.tres" id="55_bf30u"]
+[ext_resource type="Resource" path="res://Conversations/yard.tres" id="56_18c02"]
+
+[node name="OfficeLevel" type="Node2D" unique_id=1520300912]
+
+[node name="SPR_Background" type="Sprite2D" parent="." unique_id=785809394]
+texture = ExtResource("1_y2son")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="SPR_Alien" type="Sprite2D" parent="." unique_id=1454755298]
+position = Vector2(264, 268)
+texture = ExtResource("2_hqd0j")
+script = ExtResource("3_v8ayu")
+alienPhrases = Array[String](["bacon", "trpp[", "sadfsdaf", "jhgfj", "rtuiytut", "nvcvnbvb", "asdfsadfs", "jklhjkljklhj"])
+
+[node name="SPR_Mask" type="Sprite2D" parent="SPR_Alien" unique_id=1267411476]
+position = Vector2(-7, -119)
+texture = ExtResource("3_66m76")
+
+[node name="DialoguePopulate" type="Timer" parent="SPR_Alien" unique_id=1339055741]
+wait_time = 0.5
+one_shot = true
+
+[node name="NPCManager" type="Node2D" parent="." unique_id=2068257419]
+script = ExtResource("4_66m76")
+conversations = Array[ExtResource("5_885cm")]([ExtResource("7_f430w"), ExtResource("8_hgna3"), ExtResource("9_3asbo"), ExtResource("10_b4kox"), ExtResource("11_3vl52"), ExtResource("12_25r8u"), ExtResource("13_5kkk4"), ExtResource("14_3r62y"), ExtResource("15_d75wr"), ExtResource("16_te46k"), ExtResource("17_sdfsv"), ExtResource("18_10wd8"), ExtResource("19_6tob8"), ExtResource("20_obdwf"), ExtResource("21_vwl57"), ExtResource("22_m5elx"), ExtResource("23_qn3qq"), ExtResource("24_cj4bu"), ExtResource("25_ist1t"), ExtResource("26_k007g"), ExtResource("27_5t173"), ExtResource("28_h4i5e"), ExtResource("29_yd1kq"), ExtResource("30_ou55e"), ExtResource("31_c0f0k"), ExtResource("32_8l1j2"), ExtResource("33_k2h3g"), ExtResource("34_4iy4q"), ExtResource("35_1p32d"), ExtResource("36_53ans"), ExtResource("37_8ruhq"), ExtResource("38_af81k"), ExtResource("39_v6yba"), ExtResource("40_wilyw"), ExtResource("41_1ij2i"), ExtResource("42_cayi6"), ExtResource("43_j6jmw"), ExtResource("44_vjqjy"), ExtResource("45_rvq36"), ExtResource("46_qhtsg"), ExtResource("47_k0380"), ExtResource("48_vcmgb"), ExtResource("49_1is43"), ExtResource("50_guvri"), ExtResource("51_7iax6"), ExtResource("52_mc8xr"), ExtResource("53_dnnb4"), ExtResource("54_t8x47"), ExtResource("55_bf30u"), ExtResource("56_18c02")])
+
+[node name="ConversationManager" type="Node2D" parent="." unique_id=1883166592]
+script = ExtResource("8_mdadf")
+
+[node name="ConversationTimer" type="Timer" parent="ConversationManager" unique_id=438348817]
+one_shot = true
+
+[node name="OptionSelection" type="Control" parent="." unique_id=320641979]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 246.0
+offset_top = 563.0
+offset_right = 288.0
+offset_bottom = 620.0
+
+[node name="GridContainer" type="GridContainer" parent="OptionSelection" unique_id=572775147]
+layout_mode = 0
+offset_right = 652.0
+offset_bottom = 367.0
+
+[node name="Option1" type="Button" parent="OptionSelection/GridContainer" unique_id=1615901543]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Option2" type="Button" parent="OptionSelection/GridContainer" unique_id=87885277]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Option3" type="Button" parent="OptionSelection/GridContainer" unique_id=310600486]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Option4" type="Button" parent="OptionSelection/GridContainer" unique_id=1990762729]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Option5" type="Button" parent="OptionSelection/GridContainer" unique_id=132968456]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NPCDiaglogue" type="Control" parent="." unique_id=856074759]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1159.0
+offset_top = 569.0
+offset_right = 1714.0
+offset_bottom = 908.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="NPCDiaglogue" unique_id=781134707]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Start Game" type="Control" parent="." unique_id=612120827]
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 777.0
+offset_top = 84.0
+offset_right = 777.0
+offset_bottom = 84.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="Start Game" unique_id=584743115]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -48.0
+offset_top = -15.5
+offset_right = 146.0
+offset_bottom = 53.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StartGameButton" type="Button" parent="Start Game/GridContainer" unique_id=247378917]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Start Game"
+
+[connection signal="timeout" from="SPR_Alien/DialoguePopulate" to="SPR_Alien" method="_on_dialogue_populate_timeout"]
+[connection signal="timeout" from="ConversationManager/ConversationTimer" to="ConversationManager" method="_on_conversation_timer_timeout"]
+[connection signal="pressed" from="OptionSelection/GridContainer/Option1" to="SPR_Alien" method="_on_option_1_pressed"]
+[connection signal="pressed" from="OptionSelection/GridContainer/Option2" to="SPR_Alien" method="_on_option_2_pressed"]
+[connection signal="pressed" from="OptionSelection/GridContainer/Option3" to="SPR_Alien" method="_on_option_3_pressed"]
+[connection signal="pressed" from="OptionSelection/GridContainer/Option4" to="SPR_Alien" method="_on_option_4_pressed"]
+[connection signal="pressed" from="OptionSelection/GridContainer/Option5" to="SPR_Alien" method="_on_option_5_pressed"]
