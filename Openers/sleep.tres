@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://bk0sa1gg85ugv"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_g723l"]
+
+[resource]
+script = ExtResource("1_g723l")
+name = "sleep"
+line = "I didn't get any sleep last night."
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

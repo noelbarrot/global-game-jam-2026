@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://ccnsaw44702d4"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_r3vdv"]
+
+[resource]
+script = ExtResource("1_r3vdv")
+name = "defend"
+line = "Maybe AI could help us defend our country?"
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

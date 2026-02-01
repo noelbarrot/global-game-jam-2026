@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Reply" format=3 uid="uid://crs4es0ruyvxs"]
+
+[ext_resource type="Script" uid="uid://dv2qtsse17kaj" path="res://Scripts/reply.gd" id="1_ag6ab"]
+
+[resource]
+script = ExtResource("1_ag6ab")
+name = "area51"
+line = "Why did you say Area 51 twice?"
+metadata/_custom_type_script = "uid://dv2qtsse17kaj"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://c1o31fuk7jmfs"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_b0dge"]
+
+[resource]
+script = ExtResource("1_b0dge")
+name = "space"
+line = "I can't believe the rich and powerful get to go to space."
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

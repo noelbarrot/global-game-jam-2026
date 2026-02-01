@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://cgj2o6icr8er6"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_b8r2s"]
+
+[resource]
+script = ExtResource("1_b8r2s")
+name = "comp"
+line = "The computer is just not doing what I need it to."
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

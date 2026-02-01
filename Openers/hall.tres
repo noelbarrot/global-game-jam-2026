@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://bm7gptwhxhx2k"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_l3laj"]
+
+[resource]
+script = ExtResource("1_l3laj")
+name = "hall"
+line = "I'm busting, where's the bathroom?"
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

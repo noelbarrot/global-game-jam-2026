@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://nwcairuoqxlg"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_cox2j"]
+
+[resource]
+script = ExtResource("1_cox2j")
+name = "bro"
+line = "There's no reason for my brother to be that angry."
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://babaotye2jaem"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_o0btv"]
+
+[resource]
+script = ExtResource("1_o0btv")
+name = "aircon"
+line = "The air-con is too cold!"
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

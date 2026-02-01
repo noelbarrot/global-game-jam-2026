@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://br73qqw3d0xwy"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_ltcif"]
+
+[resource]
+script = ExtResource("1_ltcif")
+name = "catdog"
+line = "It's raining cat's and dogs out there."
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

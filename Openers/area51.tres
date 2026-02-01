@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://b52hw26tkrvkx"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_eex8u"]
+
+[resource]
+script = ExtResource("1_eex8u")
+name = "area51"
+line = "Area 51 or the Bermuda Triangle, what's scarier."
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

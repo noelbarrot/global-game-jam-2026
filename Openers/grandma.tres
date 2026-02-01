@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://dxx5rkf866cf3"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_r6fuq"]
+
+[resource]
+script = ExtResource("1_r6fuq")
+name = "grandma"
+line = "I lied to my parents, they think I'm at grandma's right now."
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

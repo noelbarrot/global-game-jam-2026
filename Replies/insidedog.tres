@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Reply" format=3 uid="uid://bh1146vnn6400"]
+
+[ext_resource type="Script" uid="uid://dv2qtsse17kaj" path="res://Scripts/reply.gd" id="1_pvnx5"]
+
+[resource]
+script = ExtResource("1_pvnx5")
+name = "insidedog"
+line = "You must lead by example and do yours outside."
+metadata/_custom_type_script = "uid://dv2qtsse17kaj"

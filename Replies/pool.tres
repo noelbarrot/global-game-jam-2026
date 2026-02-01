@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Reply" format=3 uid="uid://d1whfi454ooau"]
+
+[ext_resource type="Script" uid="uid://dv2qtsse17kaj" path="res://Scripts/reply.gd" id="1_d1lkq"]
+
+[resource]
+script = ExtResource("1_d1lkq")
+name = "pool"
+line = "It took three years?!"
+metadata/_custom_type_script = "uid://dv2qtsse17kaj"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://cbtnimqusq8bh"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_oc4bq"]
+
+[resource]
+script = ExtResource("1_oc4bq")
+name = "pool"
+line = "Finally, my backyard pool is finished."
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

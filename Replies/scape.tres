@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Reply" format=3 uid="uid://di7op3ocmfobd"]
+
+[ext_resource type="Script" uid="uid://dv2qtsse17kaj" path="res://Scripts/reply.gd" id="1_dm05p"]
+
+[resource]
+script = ExtResource("1_dm05p")
+name = "scape"
+line = "Looking forward to Season 5?"
+metadata/_custom_type_script = "uid://dv2qtsse17kaj"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://brivjacvbuepj"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_5x0pm"]
+
+[resource]
+script = ExtResource("1_5x0pm")
+name = "gym"
+line = "I need to hit the gym."
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

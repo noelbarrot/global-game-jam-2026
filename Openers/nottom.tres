@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://pq7t56mmqxqf"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_j2v1d"]
+
+[resource]
+script = ExtResource("1_j2v1d")
+name = "nottom"
+line = "Hey aren't you the guy from Titanic?"
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

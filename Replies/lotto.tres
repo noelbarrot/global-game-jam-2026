@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Reply" format=3 uid="uid://jkhhoi5be3yu"]
+
+[ext_resource type="Script" uid="uid://dv2qtsse17kaj" path="res://Scripts/reply.gd" id="1_ijfj7"]
+
+[resource]
+script = ExtResource("1_ijfj7")
+name = "lotto"
+line = "Because that'd be boring."
+metadata/_custom_type_script = "uid://dv2qtsse17kaj"

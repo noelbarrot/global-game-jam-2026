@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://c1y72h466h72v"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_f8y21"]
+
+[resource]
+script = ExtResource("1_f8y21")
+name = "aitalk"
+line = "They say AI will one day help us talk to aliens!"
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

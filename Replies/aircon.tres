@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Reply" format=3 uid="uid://dekf61gr7l66b"]
+
+[ext_resource type="Script" uid="uid://dv2qtsse17kaj" path="res://Scripts/reply.gd" id="1_uutcn"]
+
+[resource]
+script = ExtResource("1_uutcn")
+name = "aircon"
+line = "Just change it, nobody will stop you."
+metadata/_custom_type_script = "uid://dv2qtsse17kaj"

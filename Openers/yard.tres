@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://osvqgxskc8lt"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_a5cg0"]
+
+[resource]
+script = ExtResource("1_a5cg0")
+name = "yard"
+line = "Want to see me dig a hole a giant hole in my backyard?"
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

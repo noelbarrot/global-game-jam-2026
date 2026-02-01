@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://bck0cs41xugyu"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_rmuwj"]
+
+[resource]
+script = ExtResource("1_rmuwj")
+name = "ice"
+line = "Is ice wet?"
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

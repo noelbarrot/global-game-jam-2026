@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://dgm2rr6guxrq6"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_m18jx"]
+
+[resource]
+script = ExtResource("1_m18jx")
+name = "family"
+line = "I'm three days and a half-day from retirement."
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

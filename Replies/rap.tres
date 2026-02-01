@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Reply" format=3 uid="uid://c5v5m5moh6h"]
+
+[ext_resource type="Script" uid="uid://dv2qtsse17kaj" path="res://Scripts/reply.gd" id="1_bka08"]
+
+[resource]
+script = ExtResource("1_bka08")
+name = "rap"
+line = "It got too popular!"
+metadata/_custom_type_script = "uid://dv2qtsse17kaj"

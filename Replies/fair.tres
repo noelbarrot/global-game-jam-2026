@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Reply" format=3 uid="uid://dnvch83fjl70v"]
+
+[ext_resource type="Script" uid="uid://dv2qtsse17kaj" path="res://Scripts/reply.gd" id="1_omt3d"]
+
+[resource]
+script = ExtResource("1_omt3d")
+name = "fair"
+line = "World Fair? That's not that big."
+metadata/_custom_type_script = "uid://dv2qtsse17kaj"

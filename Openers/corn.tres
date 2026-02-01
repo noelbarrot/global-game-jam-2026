@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://jckyayjhl3gx"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_gtfw7"]
+
+[resource]
+script = ExtResource("1_gtfw7")
+name = "corn"
+line = "Want some of the cookies I baked?"
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"
