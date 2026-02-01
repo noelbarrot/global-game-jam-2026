@@ -20,10 +20,15 @@ metadata/_edit_lock_ = true
 position = Vector2(264, 268)
 texture = ExtResource("2_hqd0j")
 script = ExtResource("3_v8ayu")
+alienPhrases = Array[String](["Bacon", "banana", "cucumber", "apple", "bus", "train", "bubble", "mask", "tom"])
 
 [node name="SPR_Mask" type="Sprite2D" parent="SPR_Alien" unique_id=1267411476]
 position = Vector2(-7, -119)
 texture = ExtResource("3_66m76")
+
+[node name="DialoguePopulate" type="Timer" parent="SPR_Alien" unique_id=1339055741]
+wait_time = 0.5
+one_shot = true
 
 [node name="NPCManager" type="Node2D" parent="." unique_id=2068257419]
 script = ExtResource("4_66m76")
@@ -34,9 +39,9 @@ script = ExtResource("8_mdadf")
 
 [node name="ConversationTimer" type="Timer" parent="ConversationManager" unique_id=438348817]
 one_shot = true
-autostart = true
 
 [node name="OptionSelection" type="Control" parent="." unique_id=320641979]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = 246.0
@@ -54,22 +59,22 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Option2" type="Button" parent="OptionSelection/GridContainer" unique_id=1955447481]
+[node name="Option2" type="Button" parent="OptionSelection/GridContainer" unique_id=87885277]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Option3" type="Button" parent="OptionSelection/GridContainer" unique_id=220116462]
+[node name="Option3" type="Button" parent="OptionSelection/GridContainer" unique_id=310600486]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Option4" type="Button" parent="OptionSelection/GridContainer" unique_id=1413851462]
+[node name="Option4" type="Button" parent="OptionSelection/GridContainer" unique_id=1990762729]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Option5" type="Button" parent="OptionSelection/GridContainer" unique_id=972422943]
+[node name="Option5" type="Button" parent="OptionSelection/GridContainer" unique_id=132968456]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -90,4 +95,40 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="Start Game" type="Control" parent="." unique_id=612120827]
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 777.0
+offset_top = 84.0
+offset_right = 777.0
+offset_bottom = 84.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="Start Game" unique_id=584743115]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -48.0
+offset_top = -15.5
+offset_right = 146.0
+offset_bottom = 53.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StartGameButton" type="Button" parent="Start Game/GridContainer" unique_id=247378917]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Start Game"
+
+[connection signal="timeout" from="SPR_Alien/DialoguePopulate" to="SPR_Alien" method="_on_dialogue_populate_timeout"]
 [connection signal="timeout" from="ConversationManager/ConversationTimer" to="ConversationManager" method="_on_conversation_timer_timeout"]
+[connection signal="pressed" from="OptionSelection/GridContainer/Option1" to="SPR_Alien" method="_on_option_1_pressed"]
+[connection signal="pressed" from="OptionSelection/GridContainer/Option2" to="SPR_Alien" method="_on_option_2_pressed"]
+[connection signal="pressed" from="OptionSelection/GridContainer/Option3" to="SPR_Alien" method="_on_option_3_pressed"]
+[connection signal="pressed" from="OptionSelection/GridContainer/Option4" to="SPR_Alien" method="_on_option_4_pressed"]
+[connection signal="pressed" from="OptionSelection/GridContainer/Option5" to="SPR_Alien" method="_on_option_5_pressed"]
