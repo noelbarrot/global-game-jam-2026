@@ -5,8 +5,7 @@ var npcOpening : bool = true
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("select"):
-		_get_conversation()
+	pass
 
 func _get_conversation() -> Conversation:
 	var arrayLength : int = conversations.size()

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="AlienPhrase" format=3 uid="uid://cbrpjub7eqme5"]
+
+[ext_resource type="Script" uid="uid://btl0yrtug836r" path="res://Scripts/alienPhrase.gd" id="1_txo8h"]
+
+[resource]
+script = ExtResource("1_txo8h")
+line = "Something Weird"
+metadata/_custom_type_script = "uid://btl0yrtug836r"
