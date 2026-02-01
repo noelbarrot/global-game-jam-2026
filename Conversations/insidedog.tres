@@ -1,7 +1,11 @@
-[gd_resource type="Resource" script_class="Conversation" format=3 uid="uid://cxe62x1k6re5b"]
+[gd_resource type="Resource" script_class="Conversation" format=3 uid="uid://b1x1drf37qoei"]
 
-[ext_resource type="Script" uid="uid://clrxahvbdhld5" path="res://conversation.gd" id="1_f1b2l"]
+[ext_resource type="Script" uid="uid://clrxahvbdhld5" path="res://Scripts/conversation.gd" id="1_f1b2l"]
+[ext_resource type="Resource" path="res://Openers/insidedog.tres" id="1_soqyt"]
+[ext_resource type="Resource" path="res://Replies/insidedog.tres" id="2_4hwga"]
 
 [resource]
 script = ExtResource("1_f1b2l")
+opener = ExtResource("1_soqyt")
+reply = ExtResource("2_4hwga")
 metadata/_custom_type_script = "uid://clrxahvbdhld5"
