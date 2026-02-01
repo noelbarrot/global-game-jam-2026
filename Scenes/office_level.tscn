@@ -1,11 +1,12 @@
 [gd_scene format=3 uid="uid://d4gwdjpafj51o"]
 
-[ext_resource type="Texture2D" uid="uid://cvk8mmjs0eigv" path="res://Art/PlaceHolder_Background.png" id="1_y2son"]
+[ext_resource type="Texture2D" uid="uid://b7ihttfvi7fal" path="res://Art/OfficeBackground.png" id="1_5t173"]
 [ext_resource type="Texture2D" uid="uid://bs4c3mcypgaqb" path="res://Art/alien.png" id="2_hqd0j"]
 [ext_resource type="Texture2D" uid="uid://dubfwk1se233b" path="res://Art/HumanMask.png" id="3_66m76"]
 [ext_resource type="Script" uid="uid://bnl61ftfr370a" path="res://Scripts/alien.gd" id="3_v8ayu"]
 [ext_resource type="Script" uid="uid://bh5wbb702ue07" path="res://Scripts/npc_manager.gd" id="4_66m76"]
 [ext_resource type="Script" uid="uid://clrxahvbdhld5" path="res://Scripts/conversation.gd" id="5_885cm"]
+[ext_resource type="PackedScene" uid="uid://dm68xlmqbbpfe" path="res://Scenes/npc.tscn" id="6_h4i5e"]
 [ext_resource type="Resource" path="res://Conversations/aircon.tres" id="7_f430w"]
 [ext_resource type="Resource" path="res://Conversations/aitalk.tres" id="8_hgna3"]
 [ext_resource type="Script" uid="uid://dihclyptq2qx" path="res://Scripts/conversation_manager.gd" id="8_mdadf"]
@@ -58,18 +59,68 @@
 [ext_resource type="Resource" path="res://Conversations/wifi.tres" id="55_bf30u"]
 [ext_resource type="Resource" path="res://Conversations/yard.tres" id="56_18c02"]
 
+[sub_resource type="Animation" id="Animation_h4i5e"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NPC:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1114, 284)]
+}
+
+[sub_resource type="Animation" id="Animation_yd1kq"]
+resource_name = "walkIn"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NPC:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1114, 284), Vector2(777, 284)]
+}
+
+[sub_resource type="Animation" id="Animation_ou55e"]
+resource_name = "walkOut"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NPC:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(777, 284), Vector2(-158, 284)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ou55e"]
+_data = {
+&"RESET": SubResource("Animation_h4i5e"),
+&"walkIn": SubResource("Animation_yd1kq"),
+&"walkOut": SubResource("Animation_ou55e")
+}
+
 [node name="OfficeLevel" type="Node2D" unique_id=1520300912]
 
 [node name="SPR_Background" type="Sprite2D" parent="." unique_id=785809394]
-texture = ExtResource("1_y2son")
+texture = ExtResource("1_5t173")
 centered = false
-metadata/_edit_lock_ = true
 
 [node name="SPR_Alien" type="Sprite2D" parent="." unique_id=1454755298]
-position = Vector2(264, 268)
+position = Vector2(190, 268)
 texture = ExtResource("2_hqd0j")
 script = ExtResource("3_v8ayu")
-alienPhrases = Array[String](["bacon", "trpp[", "sadfsdaf", "jhgfj", "rtuiytut", "nvcvnbvb", "asdfsadfs", "jklhjkljklhj"])
 
 [node name="SPR_Mask" type="Sprite2D" parent="SPR_Alien" unique_id=1267411476]
 position = Vector2(-7, -119)
@@ -81,7 +132,14 @@ one_shot = true
 
 [node name="NPCManager" type="Node2D" parent="." unique_id=2068257419]
 script = ExtResource("4_66m76")
+npcSpriteArray = Array[PackedScene]([null])
 conversations = Array[ExtResource("5_885cm")]([ExtResource("7_f430w"), ExtResource("8_hgna3"), ExtResource("9_3asbo"), ExtResource("10_b4kox"), ExtResource("11_3vl52"), ExtResource("12_25r8u"), ExtResource("13_5kkk4"), ExtResource("14_3r62y"), ExtResource("15_d75wr"), ExtResource("16_te46k"), ExtResource("17_sdfsv"), ExtResource("18_10wd8"), ExtResource("19_6tob8"), ExtResource("20_obdwf"), ExtResource("21_vwl57"), ExtResource("22_m5elx"), ExtResource("23_qn3qq"), ExtResource("24_cj4bu"), ExtResource("25_ist1t"), ExtResource("26_k007g"), ExtResource("27_5t173"), ExtResource("28_h4i5e"), ExtResource("29_yd1kq"), ExtResource("30_ou55e"), ExtResource("31_c0f0k"), ExtResource("32_8l1j2"), ExtResource("33_k2h3g"), ExtResource("34_4iy4q"), ExtResource("35_1p32d"), ExtResource("36_53ans"), ExtResource("37_8ruhq"), ExtResource("38_af81k"), ExtResource("39_v6yba"), ExtResource("40_wilyw"), ExtResource("41_1ij2i"), ExtResource("42_cayi6"), ExtResource("43_j6jmw"), ExtResource("44_vjqjy"), ExtResource("45_rvq36"), ExtResource("46_qhtsg"), ExtResource("47_k0380"), ExtResource("48_vcmgb"), ExtResource("49_1is43"), ExtResource("50_guvri"), ExtResource("51_7iax6"), ExtResource("52_mc8xr"), ExtResource("53_dnnb4"), ExtResource("54_t8x47"), ExtResource("55_bf30u"), ExtResource("56_18c02")])
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="NPCManager" unique_id=613447416]
+libraries/ = SubResource("AnimationLibrary_ou55e")
+
+[node name="NPC" parent="NPCManager" unique_id=1553641228 instance=ExtResource("6_h4i5e")]
+position = Vector2(1114, 284)
 
 [node name="ConversationManager" type="Node2D" parent="." unique_id=1883166592]
 script = ExtResource("8_mdadf")
@@ -93,10 +151,10 @@ one_shot = true
 visible = false
 layout_mode = 3
 anchors_preset = 0
-offset_left = 246.0
-offset_top = 563.0
-offset_right = 288.0
-offset_bottom = 620.0
+offset_left = 14.0
+offset_top = 479.0
+offset_right = 56.0
+offset_bottom = 536.0
 
 [node name="GridContainer" type="GridContainer" parent="OptionSelection" unique_id=572775147]
 layout_mode = 0
@@ -129,14 +187,15 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="NPCDiaglogue" type="Control" parent="." unique_id=856074759]
+visible = false
 layout_mode = 3
 anchors_preset = 0
-offset_left = 1159.0
-offset_top = 569.0
-offset_right = 1714.0
-offset_bottom = 908.0
+offset_left = 242.0
+offset_top = 156.0
+offset_right = 662.0
+offset_bottom = 312.0
 
-[node name="RichTextLabel" type="RichTextLabel" parent="NPCDiaglogue" unique_id=781134707]
+[node name="Panel" type="Panel" parent="NPCDiaglogue" unique_id=562485583]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -144,14 +203,24 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="RichTextLabel" type="RichTextLabel" parent="NPCDiaglogue/Panel" unique_id=781134707]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+
 [node name="Start Game" type="Control" parent="." unique_id=612120827]
 layout_mode = 3
 anchors_preset = 10
 anchor_right = 1.0
-offset_left = 777.0
-offset_top = 84.0
-offset_right = 777.0
-offset_bottom = 84.0
+offset_left = 395.0
+offset_top = 40.0
+offset_right = 395.0
+offset_bottom = 40.0
 grow_horizontal = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -172,9 +241,10 @@ grow_vertical = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Start Game"
+text = "Correct or Wrong?"
 
 [connection signal="timeout" from="SPR_Alien/DialoguePopulate" to="SPR_Alien" method="_on_dialogue_populate_timeout"]
+[connection signal="animation_finished" from="NPCManager/AnimationPlayer" to="NPCManager" method="_on_animation_player_animation_finished"]
 [connection signal="timeout" from="ConversationManager/ConversationTimer" to="ConversationManager" method="_on_conversation_timer_timeout"]
 [connection signal="pressed" from="OptionSelection/GridContainer/Option1" to="SPR_Alien" method="_on_option_1_pressed"]
 [connection signal="pressed" from="OptionSelection/GridContainer/Option2" to="SPR_Alien" method="_on_option_2_pressed"]
