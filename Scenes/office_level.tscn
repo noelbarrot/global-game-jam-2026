@@ -6,8 +6,57 @@
 [ext_resource type="Script" uid="uid://bnl61ftfr370a" path="res://Scripts/alien.gd" id="3_v8ayu"]
 [ext_resource type="Script" uid="uid://bh5wbb702ue07" path="res://Scripts/npc_manager.gd" id="4_66m76"]
 [ext_resource type="Script" uid="uid://clrxahvbdhld5" path="res://Scripts/conversation.gd" id="5_885cm"]
-[ext_resource type="Resource" uid="uid://dm8xacai0jasx" path="res://Scenes/WeatherConversation.tres" id="6_v8ayu"]
+[ext_resource type="Resource" path="res://Conversations/aircon.tres" id="7_f430w"]
+[ext_resource type="Resource" path="res://Conversations/aitalk.tres" id="8_hgna3"]
 [ext_resource type="Script" uid="uid://dihclyptq2qx" path="res://Scripts/conversation_manager.gd" id="8_mdadf"]
+[ext_resource type="Resource" path="res://Conversations/alone.tres" id="9_3asbo"]
+[ext_resource type="Resource" path="res://Conversations/area51.tres" id="10_b4kox"]
+[ext_resource type="Resource" path="res://Conversations/baby.tres" id="11_3vl52"]
+[ext_resource type="Resource" path="res://Conversations/boss.tres" id="12_25r8u"]
+[ext_resource type="Resource" path="res://Conversations/brella.tres" id="13_5kkk4"]
+[ext_resource type="Resource" path="res://Conversations/bro.tres" id="14_3r62y"]
+[ext_resource type="Resource" path="res://Conversations/cafe.tres" id="15_d75wr"]
+[ext_resource type="Resource" path="res://Conversations/catdog.tres" id="16_te46k"]
+[ext_resource type="Resource" path="res://Conversations/cheat.tres" id="17_sdfsv"]
+[ext_resource type="Resource" path="res://Conversations/christ.tres" id="18_10wd8"]
+[ext_resource type="Resource" path="res://Conversations/comp.tres" id="19_6tob8"]
+[ext_resource type="Resource" path="res://Conversations/compile.tres" id="20_obdwf"]
+[ext_resource type="Resource" path="res://Conversations/cooler.tres" id="21_vwl57"]
+[ext_resource type="Resource" path="res://Conversations/corn.tres" id="22_m5elx"]
+[ext_resource type="Resource" path="res://Conversations/damon.tres" id="23_qn3qq"]
+[ext_resource type="Resource" path="res://Conversations/danger.tres" id="24_cj4bu"]
+[ext_resource type="Resource" path="res://Conversations/dark.tres" id="25_ist1t"]
+[ext_resource type="Resource" path="res://Conversations/defend.tres" id="26_k007g"]
+[ext_resource type="Resource" path="res://Conversations/drinks.tres" id="27_5t173"]
+[ext_resource type="Resource" path="res://Conversations/fair.tres" id="28_h4i5e"]
+[ext_resource type="Resource" path="res://Conversations/family.tres" id="29_yd1kq"]
+[ext_resource type="Resource" path="res://Conversations/game.tres" id="30_ou55e"]
+[ext_resource type="Resource" path="res://Conversations/grandma.tres" id="31_c0f0k"]
+[ext_resource type="Resource" path="res://Conversations/gym.tres" id="32_8l1j2"]
+[ext_resource type="Resource" path="res://Conversations/hall.tres" id="33_k2h3g"]
+[ext_resource type="Resource" path="res://Conversations/ice.tres" id="34_4iy4q"]
+[ext_resource type="Resource" uid="uid://b1x1drf37qoei" path="res://Conversations/insidedog.tres" id="35_1p32d"]
+[ext_resource type="Resource" path="res://Conversations/ken.tres" id="36_53ans"]
+[ext_resource type="Resource" path="res://Conversations/lotto.tres" id="37_8ruhq"]
+[ext_resource type="Resource" path="res://Conversations/mail.tres" id="38_af81k"]
+[ext_resource type="Resource" path="res://Conversations/moon.tres" id="39_v6yba"]
+[ext_resource type="Resource" path="res://Conversations/mum.tres" id="40_wilyw"]
+[ext_resource type="Resource" path="res://Conversations/nottom.tres" id="41_1ij2i"]
+[ext_resource type="Resource" path="res://Conversations/peace.tres" id="42_cayi6"]
+[ext_resource type="Resource" path="res://Conversations/phone.tres" id="43_j6jmw"]
+[ext_resource type="Resource" path="res://Conversations/pluto.tres" id="44_vjqjy"]
+[ext_resource type="Resource" uid="uid://chwa0ow2nld0e" path="res://Conversations/pool.tres" id="45_rvq36"]
+[ext_resource type="Resource" path="res://Conversations/prose.tres" id="46_qhtsg"]
+[ext_resource type="Resource" path="res://Conversations/psychic.tres" id="47_k0380"]
+[ext_resource type="Resource" path="res://Conversations/pyramids.tres" id="48_vcmgb"]
+[ext_resource type="Resource" path="res://Conversations/rap.tres" id="49_1is43"]
+[ext_resource type="Resource" path="res://Conversations/scape.tres" id="50_guvri"]
+[ext_resource type="Resource" path="res://Conversations/sleep.tres" id="51_7iax6"]
+[ext_resource type="Resource" path="res://Conversations/space.tres" id="52_mc8xr"]
+[ext_resource type="Resource" path="res://Conversations/toast.tres" id="53_dnnb4"]
+[ext_resource type="Resource" path="res://Conversations/tom.tres" id="54_t8x47"]
+[ext_resource type="Resource" path="res://Conversations/wifi.tres" id="55_bf30u"]
+[ext_resource type="Resource" path="res://Conversations/yard.tres" id="56_18c02"]
 
 [node name="OfficeLevel" type="Node2D" unique_id=1520300912]
 
@@ -20,7 +69,7 @@ metadata/_edit_lock_ = true
 position = Vector2(264, 268)
 texture = ExtResource("2_hqd0j")
 script = ExtResource("3_v8ayu")
-alienPhrases = Array[String](["Bacon", "banana", "cucumber", "apple", "bus", "train", "bubble", "mask", "tom"])
+alienPhrases = Array[String](["bacon", "trpp[", "sadfsdaf", "jhgfj", "rtuiytut", "nvcvnbvb", "asdfsadfs", "jklhjkljklhj"])
 
 [node name="SPR_Mask" type="Sprite2D" parent="SPR_Alien" unique_id=1267411476]
 position = Vector2(-7, -119)
@@ -32,7 +81,7 @@ one_shot = true
 
 [node name="NPCManager" type="Node2D" parent="." unique_id=2068257419]
 script = ExtResource("4_66m76")
-conversations = Array[ExtResource("5_885cm")]([ExtResource("6_v8ayu")])
+conversations = Array[ExtResource("5_885cm")]([ExtResource("7_f430w"), ExtResource("8_hgna3"), ExtResource("9_3asbo"), ExtResource("10_b4kox"), ExtResource("11_3vl52"), ExtResource("12_25r8u"), ExtResource("13_5kkk4"), ExtResource("14_3r62y"), ExtResource("15_d75wr"), ExtResource("16_te46k"), ExtResource("17_sdfsv"), ExtResource("18_10wd8"), ExtResource("19_6tob8"), ExtResource("20_obdwf"), ExtResource("21_vwl57"), ExtResource("22_m5elx"), ExtResource("23_qn3qq"), ExtResource("24_cj4bu"), ExtResource("25_ist1t"), ExtResource("26_k007g"), ExtResource("27_5t173"), ExtResource("28_h4i5e"), ExtResource("29_yd1kq"), ExtResource("30_ou55e"), ExtResource("31_c0f0k"), ExtResource("32_8l1j2"), ExtResource("33_k2h3g"), ExtResource("34_4iy4q"), ExtResource("35_1p32d"), ExtResource("36_53ans"), ExtResource("37_8ruhq"), ExtResource("38_af81k"), ExtResource("39_v6yba"), ExtResource("40_wilyw"), ExtResource("41_1ij2i"), ExtResource("42_cayi6"), ExtResource("43_j6jmw"), ExtResource("44_vjqjy"), ExtResource("45_rvq36"), ExtResource("46_qhtsg"), ExtResource("47_k0380"), ExtResource("48_vcmgb"), ExtResource("49_1is43"), ExtResource("50_guvri"), ExtResource("51_7iax6"), ExtResource("52_mc8xr"), ExtResource("53_dnnb4"), ExtResource("54_t8x47"), ExtResource("55_bf30u"), ExtResource("56_18c02")])
 
 [node name="ConversationManager" type="Node2D" parent="." unique_id=1883166592]
 script = ExtResource("8_mdadf")
@@ -52,7 +101,7 @@ offset_bottom = 620.0
 [node name="GridContainer" type="GridContainer" parent="OptionSelection" unique_id=572775147]
 layout_mode = 0
 offset_right = 652.0
-offset_bottom = 450.0
+offset_bottom = 367.0
 
 [node name="Option1" type="Button" parent="OptionSelection/GridContainer" unique_id=1615901543]
 layout_mode = 2

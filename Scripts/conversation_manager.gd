@@ -24,7 +24,6 @@ func _process(delta: float) -> void:
 func _on_conversation_timer_timeout() -> void:
 	if AlienOpening == false:
 		currentConversation = NPC._get_conversation()
-		#Alien.humanOpeners.append(currentConversation.opener)
 		NPCDialogue.text = currentConversation.opener.line
 		DialogueTimer.start()
 		
