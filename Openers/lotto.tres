@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://iyxcy8mtpq0v"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_54kb0"]
+
+[resource]
+script = ExtResource("1_54kb0")
+name = "lotto"
+line = "Why doesn't the lottery give all that money away to the homeless?"
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

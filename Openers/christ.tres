@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://ciff6i6pmfabk"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_uqf1v"]
+
+[resource]
+script = ExtResource("1_uqf1v")
+name = "christ"
+line = "Do you have a moment to talk about the lord Jesus Christ."
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

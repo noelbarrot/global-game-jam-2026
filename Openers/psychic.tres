@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://bsp7muqgvpi0u"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_8vmu2"]
+
+[resource]
+script = ExtResource("1_8vmu2")
+name = "psychic"
+line = "Do you think psychics are real?"
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

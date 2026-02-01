@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Conversation" format=3 uid="uid://f3o1vgb8bv2y"]
+
+[ext_resource type="Script" uid="uid://clrxahvbdhld5" path="res://conversation.gd" id="1_ncfav"]
+[ext_resource type="Resource" uid="uid://cpqencw1oj1vd" path="res://Openers/pyramids.tres" id="1_sph4a"]
+[ext_resource type="Resource" uid="uid://dcn625sjc0blj" path="res://Replies/pyramids.tres" id="2_ru2xg"]
+
+[resource]
+script = ExtResource("1_ncfav")
+opener = ExtResource("1_sph4a")
+reply = ExtResource("2_ru2xg")
+metadata/_custom_type_script = "uid://clrxahvbdhld5"

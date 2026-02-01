@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Conversation" format=3 uid="uid://c8qfnn4m73e3s"]
+
+[ext_resource type="Resource" uid="uid://d2sla7dwu0ovg" path="res://Openers/wifi.tres" id="1_kyhir"]
+[ext_resource type="Script" uid="uid://clrxahvbdhld5" path="res://conversation.gd" id="1_yhgj8"]
+[ext_resource type="Resource" uid="uid://bmtdnbs6e3ms1" path="res://Replies/wifi.tres" id="2_o3s83"]
+
+[resource]
+script = ExtResource("1_yhgj8")
+opener = ExtResource("1_kyhir")
+reply = ExtResource("2_o3s83")
+metadata/_custom_type_script = "uid://clrxahvbdhld5"

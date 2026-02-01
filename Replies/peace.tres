@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Reply" format=3 uid="uid://b1mjapfflvg2c"]
+
+[ext_resource type="Script" uid="uid://dv2qtsse17kaj" path="res://Scripts/reply.gd" id="1_8o1w3"]
+
+[resource]
+script = ExtResource("1_8o1w3")
+name = "peace"
+line = "A shame it's impossible to win by fighting."
+metadata/_custom_type_script = "uid://dv2qtsse17kaj"

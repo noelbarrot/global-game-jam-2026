@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://b5fp75ati6mjd"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_s70pq"]
+
+[resource]
+script = ExtResource("1_s70pq")
+name = "damon"
+line = "There's no such thing as a good movie, only mediocre and rubbish."
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

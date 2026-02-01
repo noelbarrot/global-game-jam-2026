@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Reply" format=3 uid="uid://c0q7k0habg5gs"]
+
+[ext_resource type="Script" uid="uid://dv2qtsse17kaj" path="res://Scripts/reply.gd" id="1_6bbn0"]
+
+[resource]
+script = ExtResource("1_6bbn0")
+name = "gym"
+line = "Just lift free-weights in the garage, it'll save you a subscription."
+metadata/_custom_type_script = "uid://dv2qtsse17kaj"

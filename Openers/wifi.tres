@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://d2sla7dwu0ovg"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_tw4gn"]
+
+[resource]
+script = ExtResource("1_tw4gn")
+name = "wifi"
+line = "What is the WiFi password here?"
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

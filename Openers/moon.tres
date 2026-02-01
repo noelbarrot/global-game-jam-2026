@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://c724i58j2m8ft"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_aef8s"]
+
+[resource]
+script = ExtResource("1_aef8s")
+name = "moon"
+line = "The full moon looked so wonderful last night."
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

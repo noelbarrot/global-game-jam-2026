@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Reply" format=3 uid="uid://c5qtaoykfgh5h"]
+
+[ext_resource type="Script" uid="uid://dv2qtsse17kaj" path="res://Scripts/reply.gd" id="1_x3tcv"]
+
+[resource]
+script = ExtResource("1_x3tcv")
+name = "hall"
+line = "Down the hall you just came from!"
+metadata/_custom_type_script = "uid://dv2qtsse17kaj"

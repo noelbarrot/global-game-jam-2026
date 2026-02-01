@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Reply" format=3 uid="uid://dc62jrr3oqk2x"]
+
+[ext_resource type="Script" uid="uid://dv2qtsse17kaj" path="res://Scripts/reply.gd" id="1_ctdib"]
+
+[resource]
+script = ExtResource("1_ctdib")
+name = "bro"
+line = "He should see a therapist."
+metadata/_custom_type_script = "uid://dv2qtsse17kaj"

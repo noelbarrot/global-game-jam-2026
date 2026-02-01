@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Conversation" format=3 uid="uid://cxe62x1k6re5b"]
+
+[ext_resource type="Script" uid="uid://clrxahvbdhld5" path="res://conversation.gd" id="1_f1b2l"]
+
+[resource]
+script = ExtResource("1_f1b2l")
+metadata/_custom_type_script = "uid://clrxahvbdhld5"

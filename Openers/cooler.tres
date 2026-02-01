@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://bg1yn7ae7emal"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_c1f5o"]
+
+[resource]
+script = ExtResource("1_c1f5o")
+name = "cooler"
+line = "Who's job is it to refill the water cooler?"
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

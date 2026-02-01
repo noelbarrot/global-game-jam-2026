@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://b6jqwt8sgiojt"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_n2fst"]
+
+[resource]
+script = ExtResource("1_n2fst")
+name = "alone"
+line = "I heard we are alone in the universe."
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

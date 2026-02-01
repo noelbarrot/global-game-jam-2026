@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Reply" format=3 uid="uid://lok6a7p8sha4"]
+
+[ext_resource type="Script" uid="uid://dv2qtsse17kaj" path="res://Scripts/reply.gd" id="1_jrwgf"]
+
+[resource]
+script = ExtResource("1_jrwgf")
+name = "space"
+line = "I just hope they have a great time."
+metadata/_custom_type_script = "uid://dv2qtsse17kaj"

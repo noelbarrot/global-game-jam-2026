@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Reply" format=3 uid="uid://bttw02m3nwiyh"]
+
+[ext_resource type="Script" uid="uid://dv2qtsse17kaj" path="res://Scripts/reply.gd" id="1_0cq33"]
+
+[resource]
+script = ExtResource("1_0cq33")
+name = "toast"
+line = "Lucky for you, Magpie Electricals is having a sale!"
+metadata/_custom_type_script = "uid://dv2qtsse17kaj"

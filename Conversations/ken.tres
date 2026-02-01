@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Conversation" format=3 uid="uid://c343xu4u34m43"]
+
+[ext_resource type="Script" uid="uid://clrxahvbdhld5" path="res://conversation.gd" id="1_kaxfi"]
+[ext_resource type="Resource" uid="uid://dhjrbqd6pye52" path="res://Openers/ken.tres" id="1_u3q1k"]
+[ext_resource type="Resource" uid="uid://dwgvsuhvhnm3r" path="res://Replies/ken.tres" id="2_fmkyw"]
+
+[resource]
+script = ExtResource("1_kaxfi")
+opener = ExtResource("1_u3q1k")
+reply = ExtResource("2_fmkyw")
+metadata/_custom_type_script = "uid://clrxahvbdhld5"

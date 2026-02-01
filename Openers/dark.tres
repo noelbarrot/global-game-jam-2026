@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://ctsbirtlnahgs"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_bbuxc"]
+
+[resource]
+script = ExtResource("1_bbuxc")
+name = "dark"
+line = "The world is a scary place right now."
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Reply" format=3 uid="uid://dfhhp60jpfdod"]
+
+[ext_resource type="Script" uid="uid://dv2qtsse17kaj" path="res://Scripts/reply.gd" id="1_755sb"]
+
+[resource]
+script = ExtResource("1_755sb")
+name = "corn"
+line = "Only if you used corn syrup."
+metadata/_custom_type_script = "uid://dv2qtsse17kaj"

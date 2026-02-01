@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Reply" format=3 uid="uid://d0fmyw1pxc6bj"]
+
+[ext_resource type="Script" uid="uid://dv2qtsse17kaj" path="res://Scripts/reply.gd" id="1_h036i"]
+
+[resource]
+script = ExtResource("1_h036i")
+name = "psychic"
+line = "If you focus hard enough, anything is possible."
+metadata/_custom_type_script = "uid://dv2qtsse17kaj"

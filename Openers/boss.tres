@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://cq1u0jg0lwpx0"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_fjpxo"]
+
+[resource]
+script = ExtResource("1_fjpxo")
+name = "boss"
+line = "My boss demands I send him those earnings reports before lunch."
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

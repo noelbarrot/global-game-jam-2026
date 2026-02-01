@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Opener" format=3 uid="uid://cpqencw1oj1vd"]
+
+[ext_resource type="Script" uid="uid://cbnmx7dhvh63g" path="res://Scripts/opener.gd" id="1_l8l0w"]
+
+[resource]
+script = ExtResource("1_l8l0w")
+name = "pyramids"
+line = "The aliens built the pyramids!"
+metadata/_custom_type_script = "uid://cbnmx7dhvh63g"

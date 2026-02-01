@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Reply" format=3 uid="uid://iiaap84mbc3i"]
+
+[ext_resource type="Script" uid="uid://dv2qtsse17kaj" path="res://Scripts/reply.gd" id="1_4pgyj"]
+
+[resource]
+script = ExtResource("1_4pgyj")
+name = "moon"
+line = "It's a shame we only have one."
+metadata/_custom_type_script = "uid://dv2qtsse17kaj"
