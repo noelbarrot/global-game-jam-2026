@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://do2qco802u4dp"]
+
+[ext_resource type="Texture2D" uid="uid://dvvyi8opd62oh" path="res://Art/titlecard.png" id="1_3lblr"]
+[ext_resource type="Script" uid="uid://ckgc0n3m2oby2" path="res://Scripts/titlescreen.gd" id="1_u4xby"]
+
+[node name="Titlescreen" type="Node2D" unique_id=405627466]
+script = ExtResource("1_u4xby")
+
+[node name="Timer" type="Timer" parent="." unique_id=1947777228]
+wait_time = 5.0
+autostart = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=170892588]
+offset_right = 959.0
+offset_bottom = 897.0
+
+[node name="BlackAndCreamVintageNewspaperMotivationalQuotePoster(960X900Px)(1920X1080Px)" type="Sprite2D" parent="." unique_id=74562487]
+position = Vector2(479.1111, 269.5)
+scale = Vector2(0.49907404, 0.49907407)
+texture = ExtResource("1_3lblr")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

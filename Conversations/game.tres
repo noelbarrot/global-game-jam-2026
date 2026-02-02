@@ -1,8 +1,8 @@
-[gd_resource type="Resource" script_class="Conversation" format=3 uid="uid://bt4qveu2farxu"]
+[gd_resource type="Resource" script_class="Conversation" format=3 uid="uid://bskvwh8ebbdne"]
 
-[ext_resource type="Script" uid="uid://clrxahvbdhld5" path="res://conversation.gd" id="1_bddg8"]
-[ext_resource type="Resource" uid="uid://cjl1gbafkwi5n" path="res://Openers/game.tres" id="1_nhtwx"]
-[ext_resource type="Resource" uid="uid://b1v54ua5cnci4" path="res://Replies/game.tres" id="2_v8lx3"]
+[ext_resource type="Script" uid="uid://clrxahvbdhld5" path="res://Scripts/conversation.gd" id="1_bddg8"]
+[ext_resource type="Resource" path="res://Openers/game.tres" id="1_nhtwx"]
+[ext_resource type="Resource" path="res://Replies/game.tres" id="2_v8lx3"]
 
 [resource]
 script = ExtResource("1_bddg8")

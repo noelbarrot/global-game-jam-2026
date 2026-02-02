@@ -1,8 +1,8 @@
-[gd_resource type="Resource" script_class="Conversation" format=3 uid="uid://b02y8wf4dlkxv"]
+[gd_resource type="Resource" script_class="Conversation" format=3 uid="uid://bsfbtuywa5wwb"]
 
-[ext_resource type="Script" uid="uid://clrxahvbdhld5" path="res://conversation.gd" id="1_gso71"]
-[ext_resource type="Resource" uid="uid://bsp7muqgvpi0u" path="res://Openers/psychic.tres" id="1_qn7iu"]
-[ext_resource type="Resource" uid="uid://d0fmyw1pxc6bj" path="res://Replies/psychic.tres" id="2_scijk"]
+[ext_resource type="Script" uid="uid://clrxahvbdhld5" path="res://Scripts/conversation.gd" id="1_gso71"]
+[ext_resource type="Resource" path="res://Openers/psychic.tres" id="1_qn7iu"]
+[ext_resource type="Resource" path="res://Replies/psychic.tres" id="2_scijk"]
 
 [resource]
 script = ExtResource("1_gso71")
